@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Room Persistance</string>
+    <string name="create_new_user">Create new user</string>
+    <string name="all_users">All users</string>
+    <string name="make_your_desired_query">Make your desired query</string>
+    <string name="fetch_user">Fetch user</string>
+    <string name="create">Create</string>
+    <string name="every_time_you_hit_create_button_you_are_adding_a_new_user_into_sqlite_table">Every time you hit create button, you are adding a new user into SQLite table - click this text to get next activity</string>
+    <string name="enter_your_last_name">Enter your last name</string>
+    <string name="phone_hint">0505999999</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="delete_all">Delete all</string>
+</resources>

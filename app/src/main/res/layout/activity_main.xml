@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.roompersistance.shais.roompersistance.MainActivity">
+
+    <TextView
+        android:id="@+id/txv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_new_user"
+        android:textSize="22sp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/edt_enter_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txv_title"
+        android:layout_marginTop="25dp"
+        android:inputType="text"
+        android:hint="@string/enter_your_name"/>
+    <EditText
+        android:id="@+id/edt_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_enter_name"
+        android:inputType="text"
+        android:hint="@string/enter_your_last_name"/>
+    <EditText
+        android:id="@+id/edt_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_last_name"
+        android:inputType="phone"
+        android:gravity="left"
+        android:hint="@string/phone_hint"/>
+
+    <TextView
+        android:id="@+id/txv_description"
+        android:layout_below="@+id/edt_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/every_time_you_hit_create_button_you_are_adding_a_new_user_into_sqlite_table"
+        android:layout_above="@+id/btn_create"
+        android:layout_centerInParent="true"
+        android:onClick="nextActivity"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="22sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create"
+        android:layout_alignParentBottom="true"
+        android:onClick="createUser"
+        />
+
+
+
+</RelativeLayout>
